@@ -109,13 +109,13 @@ const projects: Record<string, ProjectData> = {
     ],
     images: [
       "/assets-work/Caixa/Caixa-1.png",
-      "/assets-work/Caixa/Posters.png",
+      "/assets-work/Caixa/V%C3%A1rias-Caixas.png",
       "/assets-work/Caixa/LogoCaixa.png",
       "/assets-work/Caixa/Cart%C3%A3o-de-Visita-caixa.png",
-      "/assets-work/Caixa/V%C3%A1rias-Caixas.png",
-      "/assets-work/Caixa/Bon%C3%A9-Caixa.png",
-      "/assets-work/Caixa/Flags.png",
+      "/assets-work/Caixa/Posters.png",
       "/assets-work/Caixa/Caixa-de-Correio.png",
+      "/assets-work/Caixa/Flags.png",
+      "/assets-work/Caixa/Bon%C3%A9-Caixa.png",
     ],
   },
 };
