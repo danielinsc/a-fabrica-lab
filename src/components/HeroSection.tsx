@@ -41,13 +41,7 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center gap-2 text-sm">
-          <span className="w-2.5 h-2.5 rounded-full bg-[hsl(120,60%,50%)]" />
-          <div className="text-right">
-            <span className="font-semibold text-foreground">1 Vaga aberta</span>
-            <p className="text-muted-foreground text-xs">para Março</p>
-          </div>
-        </div>
+
       </div>
 
       {/* Main headline */}

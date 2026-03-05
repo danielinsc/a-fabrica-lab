@@ -9,7 +9,7 @@ const projects = [
     description: "Identidade visual completa para cafeteria artesanal.",
     gradientFrom: "#4A1E00",
     gradientTo: "#1E0A00",
-    glowColor: "rgba(222,110,0,0.45)",
+    glowColor: "rgba(180,120,60,0.25)",
     iconBg: "#ffffff",
     logo: "/assets-work/Doodle/Logo-Doodle.png",
     featured: "/assets-work/Doodle/Cavalete-Doodle.png",

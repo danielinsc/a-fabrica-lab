@@ -167,7 +167,7 @@ const ProjectPage = () => {
       {/* ── Left panel ─────────────────────────────────── */}
       <aside
         className="flex-shrink-0 flex flex-col h-screen overflow-y-auto"
-        style={{ width: 380, background: "#DE6E00" }}
+        style={{ width: 380, background: "#1b1b1b" }}
       >
         {/* Top bar */}
         <div className="flex items-center justify-between px-8 pt-8 pb-4 flex-shrink-0">

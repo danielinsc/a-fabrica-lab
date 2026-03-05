@@ -1,37 +1,35 @@
 import { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
 
-const years = [2025, 2024, 2023, 2022, 2021, 2020];
+const years = [2024, 2023, 2022, 2021, 2020, 2019, 2018];
 
 const milestones: Record<number, { role: string; company: string; period: string }[]> = {
-  2025: [
-    { role: "Expansão do portfólio", company: "A Fábrica Lab", period: "2025 - Atual" },
-    { role: "Motion Design", company: "Novos serviços", period: "2025" },
-  ],
   2024: [
-    { role: "50+ clientes atendidos", company: "A Fábrica Lab", period: "2024" },
-    { role: "Web Design", company: "Lançamento de serviço", period: "2024" },
+    { role: "Designer Sênior & Freelance", company: "A Fábrica Lab", period: "2024 - Atual" },
   ],
   2023: [
-    { role: "Identidade Visual", company: "10+ projetos entregues", period: "2023" },
-    { role: "Parcerias estratégicas", company: "A Fábrica Lab", period: "2023" },
+    { role: "Primeiro trabalho como Designer Junior", company: "Mercado formal", period: "2023" },
   ],
   2022: [
-    { role: "Design de Posts", company: "Escala de produção", period: "2022" },
-    { role: "Primeiros projetos de branding", company: "A Fábrica Lab", period: "2022" },
+    { role: "Redesign da logo da agência principal", company: "Estácio de Madureira", period: "2022" },
   ],
   2021: [
-    { role: "Fundação do estúdio", company: "A Fábrica Lab", period: "2021" },
-    { role: "Primeiros clientes", company: "Redes sociais", period: "2021" },
+    { role: "Segundo estágio", company: "Experiência profissional", period: "2021" },
   ],
   2020: [
-    { role: "Início da jornada criativa", company: "Freelance", period: "2020" },
-    { role: "Aprendizado de design", company: "Cursos e projetos pessoais", period: "2020" },
+    { role: "20 cursos online", company: "Formação intensiva", period: "2020" },
+    { role: "1° estágio", company: "Primeira experiência profissional", period: "2020" },
+  ],
+  2019: [
+    { role: "Primeiros projetos", company: "Clientes iniciais", period: "2019" },
+  ],
+  2018: [
+    { role: "Início da jornada criativa", company: "Curso de Design", period: "2018" },
   ],
 };
 
 const TimelineSection = () => {
-  const [activeYear, setActiveYear] = useState(2025);
+  const [activeYear, setActiveYear] = useState(2024);
   const experiences = milestones[activeYear] || [];
 
   return (

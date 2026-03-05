@@ -6,7 +6,7 @@ const StatsSection = () => {
       {/* 5+ years card */}
       <div className="bg-card rounded-3xl p-10 mb-4">
         <div className="flex items-baseline gap-2">
-          <span className="text-6xl font-extrabold text-foreground">5</span>
+          <span className="text-6xl font-extrabold text-foreground">8</span>
           <span className="text-3xl font-extrabold text-primary">+</span>
         </div>
         <p className="text-muted-foreground mt-2">
