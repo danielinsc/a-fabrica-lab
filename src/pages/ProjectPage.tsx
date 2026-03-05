@@ -160,6 +160,9 @@ const ProjectPage = () => {
   }
 
   const [heroImage, ...gridImages] = project.images;
+  const fullRowCount = Math.floor(gridImages.length / 3) * 3;
+  const fullRowImages = gridImages.slice(0, fullRowCount);
+  const lastRowImages = gridImages.slice(fullRowCount);
 
   return (
     <div className="flex h-screen overflow-hidden" style={{ fontFamily: "'Plus Jakarta Sans', sans-serif" }}>
@@ -225,7 +228,7 @@ const ProjectPage = () => {
 
         {/* Image grid — 3 columns, square cells */}
         <div className="grid grid-cols-3">
-          {gridImages.map((img, i) => (
+          {fullRowImages.map((img, i) => (
             <div key={i} className="aspect-square overflow-hidden">
               <img
                 src={img}
@@ -236,6 +239,22 @@ const ProjectPage = () => {
             </div>
           ))}
         </div>
+
+        {/* Last partial row — fills full width */}
+        {lastRowImages.length > 0 && (
+          <div style={{ display: "grid", gridTemplateColumns: `repeat(${lastRowImages.length}, 1fr)` }}>
+            {lastRowImages.map((img, i) => (
+              <div key={i} className="aspect-square overflow-hidden">
+                <img
+                  src={img}
+                  alt={`${project.name} ${fullRowCount + i + 2}`}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
+        )}
       </main>
     </div>
   );
